@@ -49,7 +49,7 @@ def read_radiometer_daily_xr(satname='amsre', year=2005, month=1, day=1):
             radiometer_data.attrs[key] = glb_attr[key]
         return radiometer_data
     else:
-        raise(ValueError,f"satname {satname} not valid")
+        raise(ValueError(f"satname {satname} not valid"))
 
 
 def read_amsre_daily_xr(year = 2005,month=1,day=1,path='//athena/public/ftp/amsre/bmaps_v07/'):

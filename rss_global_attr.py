@@ -1,4 +1,4 @@
-def rss_global_attr(year=year,month=month,day=day,platform='F08',sensor='SSM/I',version='V7.0')
+def rss_global_attr(year=2007,month=1,day=1,platform='F17',sensor='SSMIS',version='V7.0'):
 
     import datetime
 
@@ -21,14 +21,14 @@ def rss_global_attr(year=year,month=month,day=day,platform='F08',sensor='SSM/I',
     'creator_url' : 'http//www.remss.com/',
     'creator_email' : 'support@remss.com',
     'institution' : 'Remote Sensing Systems',
-    'geospatial_lat_min : -90.0f, 
-    'geospatial_lat_max : 90.0f, 
-    'geospatial_lon_min : -180.0f, 
-    'geospatial_lon_max : 180.0f, 
+    'geospatial_lat_min' : -90.0, 
+    'geospatial_lat_max' : 90.0, 
+    'geospatial_lon_min' : -180.0, 
+    'geospatial_lon_max' : 180.0, 
     'geospatial_lat_units' : 'degrees_north',
     'geospatial_lon_units' : 'degrees_east',
-    'geospatial_lat_resolution : 0.25, 
-    'geospatial_lon_resolution : 0.25, 
+    'geospatial_lat_resolution' : 0.25, 
+    'geospatial_lon_resolution' : 0.25, 
     'time_coverage_start' : f"{year}-{month:02d}-{day:02d}T000000Z",
     'time_coverage_end' : f"{year}-{month:02d}-{day:02d}T235959Z",
     'time_coverage_duration' : '1D',
