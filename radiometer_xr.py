@@ -1,6 +1,4 @@
-#from bytemaps import sys
-#from bytemaps import Dataset
-#from bytemaps import Verify
+
 import gzip
 import numpy as np
 import xarray as xr
