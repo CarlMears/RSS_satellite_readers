@@ -428,10 +428,10 @@ if __name__ == '__main__':
 
     
 
-    year = 2017
+    year = 2018
     month = 1
     day = 15
-    satname='amsr2'
+    satname='tmi'
     date_str = f"{month:02d}/{day:02d}/{year:04d}"
     ds = read_radiometer_daily_xr(satname=satname,year=year, month=month, day=day)
     global_map(ds['wspd_mf'].values[0, :, :],plt_colorbar=True,title=f"{satname.upper()}, Wind Speed (LF), {date_str}",vmax=25.0)
